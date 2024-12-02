@@ -1,0 +1,89 @@
+body{
+    background-color: beige;
+    padding : 20px;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+    background:#e9e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px;
+}
+hr{
+    border: 2px solid rgb(0, 0, 0);
+    width: 120px;
+    margin-left: 0;
+    margin-top: 0;   
+}
+
+input#inputName,
+input#inputDate {
+  width: 60%;
+}
+#name{
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+#inputName:hover{
+ background-color: rgb(192, 182, 235);
+}
+#inputDate:hover{
+    background-color: rgb(192, 182, 235);
+   }
+
+#date{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.row{
+    margin-bottom: 20px;
+}
+#btn {
+   width: 60px;
+   margin-bottom: 30px;
+}
+ol{
+    background-color: #f8f9fa;
+    counter-reset: section;
+    list-style-type: none;
+ 
+}
+li{
+    background-color: #f8f9fa;
+    margin-top: 10px;
+    border: 1px solid #ededf5;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+li::before{
+    counter-increment: section;
+    content: counters(section, ".")
+}
+
+#amount{
+    margin-top: 5px;
+}
+
+#showTotalAmount{
+    text-align: center;
+    margin: 10px;
+    padding-right: 110px;
+}
+.buttonClass{
+    margin-left: 10px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .buttonClass:hover {
+    background-color: #c82333;}
