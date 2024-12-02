@@ -39,12 +39,12 @@ let createList = () => {
 let totalAmount = 0;
 
 const totalDisplay = document.createElement('div');
-totalDisplay.innerHTML = `Total Amount: ${totalAmount}`;
+totalDisplay.innerHTML = `Total Expense: ${totalAmount}`;
 showTotal.appendChild(totalDisplay);
 
 //Total amount update function
 function updateTotalDisplay() {
-   totalDisplay.innerHTML = `Total: ${totalAmount}`;
+   totalDisplay.innerHTML = `Total Expense: ${totalAmount}`;
 }
 // Calling mainFunction to create list.
 addButton.addEventListener('click', mainFunction);
